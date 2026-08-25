@@ -26,8 +26,6 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual delivery-brief" aria-label="Quantorule delivery brief">
-            <div className="visual-label">A TYPICAL STARTING POINT <span>QUANTORULE / 01</span></div>
-            <div className="brief-heading"><span className="brief-status" /> DELIVERY BRIEF <strong>IN REVIEW</strong></div>
             <div className="brief-row"><span>Business need</span><strong>Replace manual reporting</strong></div>
             <div className="brief-row"><span>Work involved</span><strong>Data flow / dashboard / access</strong></div>
             <div className="brief-row"><span>First milestone</span><strong>Working view of core metrics</strong></div>
