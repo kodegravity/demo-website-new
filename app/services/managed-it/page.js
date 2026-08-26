@@ -19,25 +19,33 @@ export default function ManagedIT() {
       <section className="section">
         <div className="page-width">
           <div className="service-detail">
-            <h2>Operational Excellence</h2>
-            <p>Managed IT services provide the expertise and operational capacity to keep systems running smoothly. We handle the technical operations so you can focus on growth.</p>
+            <h2>Reliable operations for a busy business.</h2>
+            <p>Managed IT support gives your team a consistent operating rhythm for the systems, users, and vendors that keep work moving. We document the environment, resolve issues, and help prioritize improvements instead of waiting for the next interruption.</p>
             
             <div className="service-features">
               <div className="feature">
                 <h3>Infrastructure Management</h3>
-                <p>24/7 monitoring, maintenance, and support of servers, storage, networks, and cloud infrastructure.</p>
+                <p>Keep servers, endpoints, networks, and cloud resources maintained, documented, and aligned with how your team works.</p>
               </div>
               <div className="feature">
                 <h3>Helpdesk Support</h3>
-                <p>Responsive technical support for end users covering hardware, software, and connectivity issues.</p>
+                <p>Give staff a clear route for technical issues, with triage, communication, and follow-through for everyday support requests.</p>
               </div>
               <div className="feature">
                 <h3>Backup & Disaster Recovery</h3>
-                <p>Protect critical data with reliable backup and recovery capabilities to minimize downtime.</p>
+                <p>Define what must be recoverable, how quickly it is needed, and how recovery procedures are tested and maintained.</p>
               </div>
               <div className="feature">
                 <h3>Technology Planning</h3>
-                <p>Strategic guidance on infrastructure updates, modernization, and technology investments aligned with business goals.</p>
+                <p>Maintain a prioritized technology backlog covering lifecycle decisions, security work, upgrades, and planned investments.</p>
+              </div>
+              <div className="feature">
+                <h3>Monitoring & Maintenance</h3>
+                <p>Use practical alerts, routine reviews, and preventive maintenance to identify issues before they interrupt the business.</p>
+              </div>
+              <div className="feature">
+                <h3>Vendor & SaaS Support</h3>
+                <p>Coordinate technical questions, renewals, access, and integrations across the software vendors your teams depend on.</p>
               </div>
             </div>
           </div>

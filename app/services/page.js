@@ -11,8 +11,8 @@ export default function Services() {
   return (
     <main>
       {/* Hero */}
-      <section className="hero service-hero" style={{ minHeight: '400px' }}>
-        <div className="page-width" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+      <section className="hero service-hero">
+        <div className="page-width hero-content-service">
           <h1 style={{ fontSize: '48px', marginBottom: '24px' }}>Our Services</h1>
           <p style={{ fontSize: '18px', maxWidth: '600px', color: '#60727d', lineHeight: '1.6' }}>Comprehensive IT solutions tailored to your business needs</p>
         </div>

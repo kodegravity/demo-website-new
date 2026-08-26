@@ -163,6 +163,11 @@ export default function Contact() {
               </div>
 
               <div style={{ marginBottom: '48px' }}>
+                <p style={{ fontSize: '14px', color: '#60727d', marginBottom: '8px', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '.05em' }}>Phone</p>
+                <p><a href="tel:+16477955623" style={{ fontSize: '18px', color: 'var(--teal)', fontWeight: '600', textDecoration: 'none' }}>+1 647 795 5623</a></p>
+              </div>
+
+              <div style={{ marginBottom: '32px' }}>
                 <p style={{ fontSize: '14px', color: '#60727d', marginBottom: '8px', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '.05em' }}>Address</p>
                 <p style={{ fontSize: '16px', color: 'var(--ink)', lineHeight: '1.6' }}>
                   10 Four Seasons Pl Suite 1000<br />

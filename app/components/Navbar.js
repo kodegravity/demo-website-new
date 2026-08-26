@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const services = [
     { name: 'Custom Software Development', href: '/services/software-development' },
@@ -25,13 +26,18 @@ export default function Navbar() {
           <span>Quantorule</span>
         </Link>
         
-        <div className="nav-links">
+        <button className="mobile-menu-button" type="button" aria-expanded={mobileOpen} aria-controls="primary-navigation" onClick={() => setMobileOpen((open) => !open)}>
+          <span>{mobileOpen ? 'Close' : 'Menu'}</span>
+          <span className="menu-icon" aria-hidden="true"><i /><i /><i /></span>
+        </button>
+
+        <div id="primary-navigation" className={`nav-links ${mobileOpen ? 'nav-links-open' : ''}`}>
           <Link href="/">Home</Link>
           <div className="dropdown-container"
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <button className="dropdown-trigger">
+            <button className="dropdown-trigger" type="button" onClick={() => setServicesOpen((open) => !open)}>
               Services
             </button>
             {servicesOpen && (
@@ -51,7 +57,7 @@ export default function Navbar() {
           <Link href="/contact">Contact</Link>
         </div>
 
-        <Link className="button button-small button-primary" href="/contact">
+        <Link className="button button-small button-primary nav-cta" href="/contact">
           Talk to an expert
         </Link>
       </div>
@@ -84,7 +90,9 @@ export default function Navbar() {
           display: flex;
           flex-direction: column;
           z-index: 1000;
-          margin-top: 8px;
+          margin-top: 0;
+          padding-top: 8px;
+          background: transparent;
           box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         
@@ -94,6 +102,7 @@ export default function Navbar() {
           font-size: 13px;
           color: var(--ink);
           transition: background .2s;
+          background: white;
         }
         
         .dropdown-menu a:last-child {
