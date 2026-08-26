@@ -2,110 +2,118 @@ import Link from 'next/link';
 import ServiceCard from './components/ServiceCard';
 import CTA from './components/CTA';
 
+export const metadata = {
+  title: 'Quantorule | IT Consulting & Software Development',
+  description:
+    'Business technology specialists. Custom software, cloud, data, and security solutions for growing organizations.',
+};
+
 export default function Home() {
+  const services = [
+    {
+      title: 'Custom Software Development',
+      description: 'Purpose-built applications tailored to your business requirements.',
+      href: '/services/software-development'
+    },
+    {
+      title: 'Cloud Migration',
+      description: 'Plan and execute secure migrations to cloud platforms.',
+      href: '/services/cloud-migration'
+    },
+    {
+      title: 'Data & Analytics',
+      description: 'Build data platforms that drive better business decisions.',
+      href: '/services/data-analytics'
+    },
+    {
+      title: 'Cyber Security',
+      description: 'Protect systems and data with security-first design.',
+      href: '/services/cyber-security'
+    },
+    {
+      title: 'DevOps & Platform',
+      description: 'Modern CI/CD, automation, and reliable infrastructure.',
+      href: '/services/devops-platform'
+    },
+    {
+      title: 'Managed IT Services',
+      description: 'Proactive monitoring, maintenance, and technical support.',
+      href: '/services/managed-it'
+    },
+  ];
+
+  const industries = [
+    'Professional Services',
+    'Logistics',
+    'Healthcare Operations',
+    'Real Estate & Property',
+    'Retail Operations',
+    'Finance & Administration'
+  ];
+
   return (
     <main>
       {/* Hero Section */}
-      <section className="hero" id="top">
-        <div className="hero-content page-width">
+      <section className="hero">
+        <div className="page-width hero-content">
           <div className="hero-copy">
-            <p className="eyebrow"><span className="eyebrow-line" /> TRUSTED TECHNOLOGY PARTNERS</p>
-            <h1>Custom software, cloud solutions, and IT expertise for <em>growing businesses.</em></h1>
-            <p className="hero-text">Quantorule delivers comprehensive IT consulting, custom software development, cloud infrastructure, automation, and technical staffing. We help medium-sized businesses build reliable, scalable digital systems.</p>
+            <h1>Business technology specialists you can trust.</h1>
+            <p className="hero-text">Quantorule helps organizations make better technology decisions and build secure, dependable systems—from custom software and cloud migration to data platforms, automation, and managed operations.</p>
             <div className="hero-actions">
-              <Link className="button button-primary" href="/contact">Start a project <span aria-hidden="true">→</span></Link>
-              <Link className="text-link" href="#services">View services <span aria-hidden="true">→</span></Link>
+              <Link className="button button-primary" href="/contact">Learn more</Link>
+              <Link className="button button-outline" href="/contact">Talk to an expert</Link>
             </div>
           </div>
-          <div className="hero-visual" aria-label="A diagram representing connected business systems">
-            <div className="visual-label">BUSINESS SYSTEMS <span>01 / 04</span></div>
-            <div className="system-map">
-              <span className="map-line line-one" /><span className="map-line line-two" /><span className="map-line line-three" />
-              <div className="map-node node-core"><strong>YOUR</strong><small>BUSINESS</small></div>
-              <div className="map-node node-cloud"><span className="node-dot" />CLOUD</div>
-              <div className="map-node node-data"><span className="node-dot" />DATA</div>
-              <div className="map-node node-team"><span className="node-dot" />TOOLS</div>
-            </div>
-            <div className="visual-footer"><span>INTEGRATED & SCALABLE</span><span className="pulse-dot" /> <span>BUILT TO GROW</span></div>
-          </div>
-        </div>
-        <div className="scroll-cue page-width"><span>SCROLL TO EXPLORE</span><span className="scroll-line" /></div>
-      </section>
-
-      {/* Trust Badges */}
-      <section className="outcomes section-light">
-        <div className="page-width outcomes-grid">
-          <p className="section-kicker">WHY CHOOSE QUANTORULE</p>
-          <div className="outcome"><strong>01</strong><h3>Strategic Planning</h3><p>We align technology with your business goals and growth trajectory.</p></div>
-          <div className="outcome"><strong>02</strong><h3>Expert Delivery</h3><p>Experienced teams delivering production-ready solutions on time and budget.</p></div>
-          <div className="outcome"><strong>03</strong><h3>Long-term Support</h3><p>Ongoing technical support, maintenance, and optimization beyond launch.</p></div>
         </div>
       </section>
 
-      {/* What We Do Section */}
+      {/* Trust Points */}
+      <section className="trust-section section-light">
+        <div className="page-width">
+          <div className="trust-grid">
+            <div className="trust-item">
+              <p><strong>Toronto-based team</strong></p>
+              <p>Local expertise with a track record serving medium-sized organizations.</p>
+            </div>
+            <div className="trust-item">
+              <p><strong>Practical, vendor-neutral guidance</strong></p>
+              <p>We recommend technologies based on your needs, not vendor preferences.</p>
+            </div>
+            <div className="trust-item">
+              <p><strong>Security-minded delivery</strong></p>
+              <p>Security is built into every system we design, not added afterward.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
       <section className="section" id="services">
         <div className="page-width">
-          <div className="section-heading">
-            <div>
-              <p className="heading-note">OUR EXPERTISE</p>
-              <h2>Services that drive business growth</h2>
-              <p className="section-description">We combine strategy, design, and technology to solve real business problems.</p>
-            </div>
+          <div className="section-header">
+            <h2>What We Do</h2>
+            <p>Comprehensive technology services for growing organizations</p>
           </div>
 
-          <div className="service-grid">
-            <ServiceCard
-              title="Software Development"
-              description="Custom web and desktop applications built for your specific business needs."
-              href="/services/software-development"
-            />
-            <ServiceCard
-              title="Cloud & Infrastructure"
-              description="Secure, scalable cloud platforms and infrastructure for enterprise growth."
-              href="/services/cloud-infrastructure"
-            />
-            <ServiceCard
-              title="Automation & AI"
-              description="Workflow automation and AI-powered solutions to improve efficiency."
-              href="/services/automation-ai"
-            />
-            <ServiceCard
-              title="Staffing & Talent"
-              description="Technical staffing and expert resources for your team."
-              href="/services/staffing-talent"
-            />
+          <div className="service-grid-modern">
+            {services.map((service, idx) => (
+              <Link key={idx} href={service.href} className="service-card-modern">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Industries Section */}
+      {/* Company Section */}
       <section className="section section-light">
         <div className="page-width">
-          <div className="section-heading">
-            <div>
-              <p className="heading-note">INDUSTRIES</p>
-              <h2>Expertise across key sectors</h2>
-              <p className="section-description">We serve businesses in finance, healthcare, manufacturing, retail, and more.</p>
-            </div>
-          </div>
-
-          <div className="industry-list">
-            <div>
-              <h3>Financial Services</h3>
-              <p>Secure, compliant systems for banking, fintech, and investment platforms.</p>
-            </div>
-            <div>
-              <h3>Healthcare</h3>
-              <p>HIPAA-compliant solutions for patient management and clinical workflows.</p>
-            </div>
-            <div>
-              <h3>Manufacturing</h3>
-              <p>Digital transformation, supply chain, and operational efficiency systems.</p>
-            </div>
-            <div>
-              <h3>Retail & E-Commerce</h3>
-              <p>Scalable platforms and integrations for omnichannel retail operations.</p>
-            </div>
+          <div className="company-section">
+            <h2>About Quantorule</h2>
+            <p>We're a practical technology partner for growing organizations. We solve real problems—helping teams modernize systems, improve operations, and make better technology decisions.</p>
+            <p>Our experience spans custom software development, cloud infrastructure, data platforms, security, and managed IT operations. We work in partnership with our clients, focusing on understanding business goals and delivering sustainable solutions.</p>
+            <Link href="/about" className="text-link">Learn more about our company →</Link>
           </div>
         </div>
       </section>
@@ -113,43 +121,113 @@ export default function Home() {
       {/* How We Work Section */}
       <section className="section">
         <div className="page-width">
-          <div className="section-heading">
-            <div>
-              <p className="heading-note">OUR APPROACH</p>
-              <h2>How we deliver success</h2>
+          <div className="section-header">
+            <h2>How We Work</h2>
+            <p>A proven five-step process from discovery through ongoing support</p>
+          </div>
+
+          <div className="process-grid-horizontal">
+            <div className="process-item">
+              <span className="process-num">1</span>
+              <h3>Discover</h3>
+              <p>Understand your business and goals</p>
+            </div>
+            <div className="process-item">
+              <span className="process-num">2</span>
+              <h3>Plan</h3>
+              <p>Develop strategy and architecture</p>
+            </div>
+            <div className="process-item">
+              <span className="process-num">3</span>
+              <h3>Build</h3>
+              <p>Execute with quality and transparency</p>
+            </div>
+            <div className="process-item">
+              <span className="process-num">4</span>
+              <h3>Launch</h3>
+              <p>Deploy carefully with training and support</p>
+            </div>
+            <div className="process-item">
+              <span className="process-num">5</span>
+              <h3>Support</h3>
+              <p>Ongoing optimization and guidance</p>
             </div>
           </div>
 
-          <div className="process-grid">
-            <div>
-              <p className="process-number">01</p>
-              <h3>Discovery & Planning</h3>
-              <p>We understand your business, challenges, and goals before writing code.</p>
+          <div className="section-cta">
+            <Link href="/how-we-work" className="text-link">See our methodology in detail →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Engagements Section */}
+      <section className="section section-light">
+        <div className="page-width">
+          <div className="section-header">
+            <h2>Engagement Models</h2>
+            <p>We work in ways that fit your needs</p>
+          </div>
+
+          <div className="engagement-cards">
+            <div className="engagement-item">
+              <h3>Cloud Readiness Assessment</h3>
+              <p>Evaluate infrastructure and develop migration strategy</p>
             </div>
-            <div>
-              <p className="process-number">02</p>
-              <h3>Strategy & Design</h3>
-              <p>Clear roadmaps, architecture, and design that align with your vision.</p>
+            <div className="engagement-item">
+              <h3>Web Application Build</h3>
+              <p>Custom application development from concept to launch</p>
             </div>
-            <div>
-              <p className="process-number">03</p>
-              <h3>Development & Testing</h3>
-              <p>Agile development with continuous testing and quality assurance.</p>
+            <div className="engagement-item">
+              <h3>Dashboard & Reporting</h3>
+              <p>Business intelligence and analytics platforms</p>
             </div>
-            <div>
-              <p className="process-number">04</p>
-              <h3>Deployment & Support</h3>
-              <p>Smooth launches and ongoing technical support for your systems.</p>
+            <div className="engagement-item">
+              <h3>Automation Implementation</h3>
+              <p>Automate workflows and improve efficiency</p>
             </div>
+            <div className="engagement-item">
+              <h3>Security Assessment</h3>
+              <p>Evaluate and strengthen security posture</p>
+            </div>
+            <div className="engagement-item">
+              <h3>Managed Support</h3>
+              <p>Ongoing operations, monitoring, and strategic guidance</p>
+            </div>
+          </div>
+
+          <div className="section-cta">
+            <Link href="/engagements" className="text-link">Explore engagement options →</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Industries Section */}
+      <section className="section">
+        <div className="page-width">
+          <div className="section-header">
+            <h2>Industries We Serve</h2>
+            <p>Experience across key business sectors</p>
+          </div>
+
+          <div className="industries-grid">
+            {industries.map((industry, idx) => (
+              <div key={idx} className="industry-badge">
+                {industry}
+              </div>
+            ))}
+          </div>
+
+          <div className="section-cta">
+            <Link href="/industries" className="text-link">Learn about our industry expertise →</Link>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <CTA
-        title="Ready to transform your business?"
-        description="Let's discuss how Quantorule can deliver the technology solutions your business needs to thrive."
-        buttonText="Start a project"
+        title="Ready to improve your technology?"
+        description="Let's discuss how Quantorule can help your organization build better systems and make smarter technology decisions."
+        buttonText="Start the conversation"
         buttonHref="/contact"
       />
     </main>

@@ -4,43 +4,57 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
+  const services = [
+    { name: 'Custom Software Development', href: '/services/software-development' },
+    { name: 'Web Applications', href: '/services/software-development' },
+    { name: 'Cloud Migration', href: '/services/cloud-migration' },
+    { name: 'Data & Analytics', href: '/services/data-analytics' },
+    { name: 'Cyber Security', href: '/services/cyber-security' },
+    { name: 'DevOps & Platform', href: '/services/devops-platform' },
+    { name: 'Managed IT Services', href: '/services/managed-it' },
+    { name: 'Automation & AI', href: '/services/software-development' },
+  ];
+
   return (
-    <nav className="nav page-width" aria-label="Main navigation">
-      <Link className="brand" href="/" aria-label="Quantorule home">
-        <span className="brand-mark" aria-hidden="true">Q</span>
-        <span>Quantorule</span>
-      </Link>
-      
-      <div className="nav-links">
-        <Link href="/">Home</Link>
-        <div className="dropdown-container">
-          <button 
-            className="dropdown-trigger"
+    <nav className="navbar" aria-label="Main navigation">
+      <div className="page-width navbar-content">
+        <Link className="brand" href="/" aria-label="Quantorule home">
+          <span className="brand-mark" aria-hidden="true">Q</span>
+          <span>Quantorule</span>
+        </Link>
+        
+        <div className="nav-links">
+          <Link href="/">Home</Link>
+          <div className="dropdown-container"
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            Services
-          </button>
-          {servicesOpen && (
-            <div className="dropdown-menu">
-              <Link href="/services/software-development">Software Development</Link>
-              <Link href="/services/cloud-infrastructure">Cloud & Infrastructure</Link>
-              <Link href="/services/automation-ai">Automation & AI</Link>
-              <Link href="/services/staffing-talent">Staffing & Talent</Link>
-            </div>
-          )}
+            <button className="dropdown-trigger">
+              Services
+            </button>
+            {servicesOpen && (
+              <div className="dropdown-menu">
+                {services.map((service) => (
+                  <Link key={service.href} href={service.href}>
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+          <Link href="/how-we-work">How We Work</Link>
+          <Link href="/engagements">Engagements</Link>
+          <Link href="/industries">Industries</Link>
+          <Link href="/about">Our Company</Link>
+          <Link href="/contact">Contact</Link>
         </div>
-        <Link href="/industries">Industries</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
-      </div>
 
-      <Link className="button button-small button-dark" href="/contact">
-        Start a Project <span aria-hidden="true">-&gt;</span>
-      </Link>
+        <Link className="button button-small button-primary" href="/contact">
+          Talk to an expert
+        </Link>
+      </div>
 
       <style jsx>{`
         .dropdown-container {
