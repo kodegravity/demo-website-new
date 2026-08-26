@@ -31,10 +31,10 @@ export default function Contact() {
   return (
     <main>
       {/* Hero */}
-      <section className="hero service-hero" style={{ minHeight: '400px' }}>
-        <div className="page-width" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+      <section className="hero service-hero">
+        <div className="page-width hero-content-service">
           <h1 style={{ fontSize: '48px', marginBottom: '24px' }}>Get in Touch</h1>
-          <p style={{ fontSize: '18px', maxWidth: '600px', color: '#60727d', lineHeight: '1.6' }}>Let's discuss how we can help your business</p>
+          <p style={{ fontSize: '18px', maxWidth: '600px', color: '#60727d', lineHeight: '1.6' }}>Tell us what is changing, what is getting in the way, or what you need your systems to do next.</p>
         </div>
       </section>
 
@@ -44,7 +44,8 @@ export default function Contact() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }}>
             {/* Form */}
             <div>
-              <h2 style={{ marginBottom: '32px' }}>Send us a message</h2>
+              <h2 style={{ marginBottom: '16px' }}>Start with the problem</h2>
+              <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '28px' }}>A useful first conversation can start with a rough idea. Share the context you have and we will respond with the questions that help clarify the path forward.</p>
               {submitted && (
                 <div style={{
                   padding: '16px',
@@ -183,7 +184,7 @@ export default function Contact() {
               }}>
                 <h3 style={{ marginTop: 0, marginBottom: '12px' }}>Quick Response</h3>
                 <p style={{ margin: 0, fontSize: '14px', color: '#60727d', lineHeight: '1.6' }}>
-                  Have a time-sensitive question? Email us directly at <a href="mailto:info@quantorule.com" style={{ color: 'var(--teal)', fontWeight: '600' }}>info@quantorule.com</a> for priority handling.
+                  For a direct introduction, email <a href="mailto:info@quantorule.com" style={{ color: 'var(--teal)', fontWeight: '600' }}>info@quantorule.com</a>. Include your timeline, current systems, and the outcome you are trying to reach.
                 </p>
               </div>
             </div>

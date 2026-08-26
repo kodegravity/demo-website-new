@@ -10,10 +10,10 @@ export default function Industries() {
   return (
     <main>
       {/* Hero */}
-      <section className="hero service-hero" style={{ minHeight: '400px' }}>
-        <div className="page-width" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+      <section className="hero service-hero">
+        <div className="page-width hero-content-service">
           <h1 style={{ fontSize: '48px', marginBottom: '24px' }}>Industries We Serve</h1>
-          <p style={{ fontSize: '18px', maxWidth: '600px', color: '#60727d', lineHeight: '1.6' }}>Deep expertise across key business sectors</p>
+          <p style={{ fontSize: '18px', maxWidth: '600px', color: '#60727d', lineHeight: '1.6' }}>Technology support for teams balancing customer service, operational detail, and responsible growth.</p>
         </div>
       </section>
 
@@ -24,49 +24,49 @@ export default function Industries() {
             <div className="industry-card" style={{ borderLeft: '3px solid var(--teal)', paddingLeft: '24px' }}>
               <h3 style={{ marginBottom: '16px' }}>Financial Services</h3>
               <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '16px' }}>
-                Banks, fintech companies, and investment firms trust Quantorule with their digital infrastructure. We build secure, compliant platforms for trading, payments, lending, and portfolio management.
+                Finance and administration teams need dependable information, clear controls, and systems that make review and reconciliation less manual. We help improve reporting, approvals, integrations, and access management.
               </p>
-              <p style={{ color: '#60727d', fontSize: '14px' }}>Compliance: SOX, PCI-DSS, AML regulations</p>
+              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: reporting, reconciliation, controls, and workflow automation</p>
             </div>
 
             <div className="industry-card" style={{ borderLeft: '3px solid var(--teal)', paddingLeft: '24px' }}>
               <h3 style={{ marginBottom: '16px' }}>Healthcare</h3>
               <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '16px' }}>
-                Healthcare providers, medical device companies, and health tech startups rely on our HIPAA-compliant solutions for patient management, clinical workflows, and data analytics.
+                Healthcare operations depend on accurate information and careful handling of sensitive workflows. We support scheduling, referrals, internal reporting, and secure operational tools.
               </p>
-              <p style={{ color: '#60727d', fontSize: '14px' }}>Compliance: HIPAA, HL7, FHIR standards</p>
+              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: workflow clarity, access controls, reporting, and integration planning</p>
             </div>
 
             <div className="industry-card" style={{ borderLeft: '3px solid var(--teal)', paddingLeft: '24px' }}>
               <h3 style={{ marginBottom: '16px' }}>Manufacturing</h3>
               <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '16px' }}>
-                Industrial manufacturers benefit from our MES systems, supply chain solutions, and IoT integrations for operational efficiency and predictive maintenance.
+                Logistics teams need timely information across dispatch, inventory, suppliers, and exceptions. We connect operational systems and improve the visibility needed for daily decisions.
               </p>
-              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: ERP, MES, IoT, analytics</p>
+              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: dispatch, inventory, integrations, and operational reporting</p>
             </div>
 
             <div className="industry-card" style={{ borderLeft: '3px solid var(--teal)', paddingLeft: '24px' }}>
               <h3 style={{ marginBottom: '16px' }}>Retail & E-Commerce</h3>
               <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '16px' }}>
-                Retailers and e-commerce businesses leverage our platforms for omnichannel operations, inventory management, and customer analytics.
+                Retail operations benefit from dependable inventory, order, customer, and store information. We help teams reduce duplicate entry and build reporting they can use.
               </p>
-              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: POS, inventory, CRM, analytics</p>
+              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: inventory, orders, customer data, and connected reporting</p>
             </div>
 
             <div className="industry-card" style={{ borderLeft: '3px solid var(--teal)', paddingLeft: '24px' }}>
               <h3 style={{ marginBottom: '16px' }}>Professional Services</h3>
               <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '16px' }}>
-                Consulting firms, law firms, and accounting practices use our business management platforms for project tracking, billing, and client management.
+                Professional services teams need systems that connect delivery, time, billing, documents, and client communication. We help improve the flow between those activities.
               </p>
-              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: PSA, time tracking, billing</p>
+              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: project operations, time capture, billing, and portals</p>
             </div>
 
             <div className="industry-card" style={{ borderLeft: '3px solid var(--teal)', paddingLeft: '24px' }}>
               <h3 style={{ marginBottom: '16px' }}>Technology & Software</h3>
               <p style={{ color: '#60727d', lineHeight: '1.6', marginBottom: '16px' }}>
-                Tech companies trust Quantorule for infrastructure, APIs, platform development, and SaaS solutions that power their businesses.
+                Software and technology teams often need additional capacity for platform work, integrations, release practices, or the operational systems around a product.
               </p>
-              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: SaaS, APIs, cloud-native</p>
+              <p style={{ color: '#60727d', fontSize: '14px' }}>Focus: APIs, cloud platforms, delivery automation, and support</p>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Industries() {
             </div>
             <div>
               <h3 style={{ marginBottom: '16px' }}>Workflow Understanding</h3>
-              <p style={{ color: '#60727d', lineHeight: '1.6' }}>We understand your business processes and design solutions that fit seamlessly.</p>
+              <p style={{ color: '#60727d', lineHeight: '1.6' }}>We understand your business processes and design solutions that fit the way your teams work.</p>
             </div>
           </div>
         </div>

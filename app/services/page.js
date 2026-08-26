@@ -80,7 +80,7 @@ export default function Services() {
       {/* CTA */}
       <CTA
         title="Let's discuss your technology needs"
-        description="Schedule a consultation with our team to explore how we can help transform your business."
+        description="Schedule a consultation with our team to explore the systems, workflows, and technology decisions that matter next."
         buttonText="Schedule a call"
         buttonHref="/contact"
       />

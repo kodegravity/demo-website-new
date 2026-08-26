@@ -10,8 +10,8 @@ export default function About() {
   return (
     <main>
       {/* Hero */}
-      <section className="hero service-hero" style={{ minHeight: '400px' }}>
-        <div className="page-width" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+      <section className="hero service-hero">
+        <div className="page-width hero-content-service">
           <h1 style={{ fontSize: '48px', marginBottom: '24px' }}>About Quantorule</h1>
           <p style={{ fontSize: '18px', maxWidth: '600px', color: '#60727d', lineHeight: '1.6' }}>Building reliable technology for growing businesses</p>
         </div>
@@ -20,13 +20,13 @@ export default function About() {
       {/* Mission */}
       <section className="section">
         <div className="page-width">
-          <div style={{ maxWidth: '800px', marginBottom: '80px' }}>
+          <div style={{ maxWidth: '800px', marginBottom: '48px' }}>
             <h2 style={{ marginBottom: '24px' }}>Our Mission</h2>
             <p style={{ fontSize: '16px', color: '#60727d', lineHeight: '1.7', marginBottom: '16px' }}>
-              At Quantorule, we believe that technology should empower businesses, not complicate them. Our mission is to deliver custom software, cloud solutions, and strategic technology guidance that enables medium-sized businesses to compete and grow.
+              At Quantorule, we believe technology should make important work clearer, safer, and easier to operate. Our mission is to give medium-sized businesses the technical judgment and delivery support they need to improve systems without losing sight of the people who use them.
             </p>
             <p style={{ fontSize: '16px', color: '#60727d', lineHeight: '1.7' }}>
-              We combine deep technical expertise with practical business thinking to create solutions that are reliable, scalable, and aligned with your strategic goals.
+              We combine software delivery, infrastructure, data, and security experience with practical business thinking. That means honest recommendations, clear tradeoffs, and solutions that can be maintained after the project team has left.
             </p>
           </div>
 
@@ -83,30 +83,30 @@ export default function About() {
         </div>
       </section>
 
-      {/* Experience */}
+      {/* Working relationship */}
       <section className="section">
         <div className="page-width">
-          <h2 style={{ marginBottom: '48px' }}>Our Experience</h2>
+          <h2 style={{ marginBottom: '32px' }}>What working with us looks like</h2>
           <div className="process-grid">
             <div>
-              <p className="process-number">100+</p>
-              <h3>Projects Delivered</h3>
-              <p>Successful engagements across diverse industries and project types.</p>
+              <p className="process-number">01</p>
+              <h3>Useful discovery</h3>
+              <p>We document the current environment, the operating problem, and the decision that needs to be made.</p>
             </div>
             <div>
-              <p className="process-number">20+</p>
-              <h3>Industries Served</h3>
-              <p>Deep expertise across financial services, healthcare, manufacturing, and more.</p>
+              <p className="process-number">02</p>
+              <h3>Visible delivery</h3>
+              <p>Work is organized into reviewable steps so stakeholders can respond before small issues become expensive ones.</p>
             </div>
             <div>
-              <p className="process-number">15+</p>
-              <h3>Team Members</h3>
-              <p>Talented developers, engineers, and specialists dedicated to your success.</p>
+              <p className="process-number">03</p>
+              <h3>Operational handover</h3>
+              <p>Documentation, access decisions, runbooks, and training are part of delivery rather than an afterthought.</p>
             </div>
             <div>
-              <p className="process-number">100%</p>
-              <h3>Commitment</h3>
-              <p>Every project receives our full attention and expertise.</p>
+              <p className="process-number">04</p>
+              <h3>Practical support</h3>
+              <p>After launch, we can stay involved through maintenance, improvements, and a technology backlog shaped with your team.</p>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function About() {
       {/* CTA */}
       <CTA
         title="Ready to work together?"
-        description="Let's discuss how we can help transform your business with technology."
+        description="Let's discuss the systems, workflows, or technology decisions that need attention next."
         buttonText="Start a conversation"
         buttonHref="/contact"
       />

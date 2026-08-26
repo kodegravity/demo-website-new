@@ -23,7 +23,7 @@ export default function StaffingTalent() {
           <div style={{ maxWidth: '800px', marginBottom: '80px' }}>
             <h2 style={{ marginBottom: '24px' }}>Flexible Technical Resources</h2>
             <p style={{ fontSize: '16px', color: '#60727d', lineHeight: '1.7', marginBottom: '16px' }}>
-              Building and maintaining a skilled technical team is challenging. Whether you need additional developers, DevOps engineers, QA specialists, or technical architects, Quantorule provides experienced professionals who integrate seamlessly with your organization.
+              Building and maintaining a skilled technical team is challenging. Whether you need additional developers, DevOps engineers, QA specialists, or technical architects, Quantorule provides practical support that fits your organization and delivery process.
             </p>
             <p style={{ fontSize: '16px', color: '#60727d', lineHeight: '1.7' }}>
               From short-term project support to long-term dedicated roles, our staffing solutions are flexible and scalable to meet your changing needs.
