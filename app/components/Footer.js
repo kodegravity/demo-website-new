@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="footer-contact">
               <p><strong>Email:</strong> <a href="mailto:info@quantorule.com">info@quantorule.com</a></p>
               <p><strong>Phone:</strong> <a href="tel:+16477955623">+1 647 795 5623</a></p>
-              <p><strong>Address:</strong> 10 Four Seasons Pl Suite 1000, Etobicoke, ON M9B 6H7</p>
+              <p><strong>Address:</strong> 10 Four Seasons Pl, Etobicoke, ON M9B 6H7</p>
             </div>
           </div>
         </div>

@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Quantorule | IT Consulting & Software Development",
+  title: "Quantorule | Software, Cloud, and IT Systems",
   description:
-    "Quantorule provides IT consulting, custom software development, cloud infrastructure, and automation solutions for growing businesses.",
+    "Quantorule helps medium-sized companies design, build, deploy, and maintain reliable digital systems, from custom web applications to cloud infrastructure, automation, data platforms, and managed IT support.",
 };
 
 export default function RootLayout({ children }) {
