@@ -49,7 +49,7 @@ export default function Navbar() {
     <nav className="navbar" aria-label="Main navigation">
       <div className="page-width navbar-content">
         <Link className="brand" href="/" aria-label="Quantorule home" onClick={closeMenus}>
-          <span className="brand-mark" aria-hidden="true">Q</span>
+          <img src="/favicon.jpg" alt="" className="brand-mark" />
           <span>Quantorule</span>
         </Link>
 

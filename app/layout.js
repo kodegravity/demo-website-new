@@ -18,8 +18,9 @@ export const metadata = {
   description:
     "Quantorule helps medium-sized companies design, build, deploy, and maintain reliable digital systems, from custom web applications to cloud infrastructure, automation, data platforms, and managed IT support.",
   icons: {
-    icon: "/favicon.svg",
-    apple: "/apple-icon.png",
+    icon: "/favicon.jpg",
+    shortcut: "/favicon.jpg",
+    apple: "/favicon.jpg",
   },
 };
 

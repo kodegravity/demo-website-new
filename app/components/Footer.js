@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <div className="footer-header">
             <div className="brand">
-              <span className="brand-mark" aria-hidden="true">Q</span>
+              <img src="/favicon.jpg" alt="" className="brand-mark" />
               <span>Quantorule</span>
             </div>
             <p className="footer-tagline">IT consulting and software development for growing businesses.</p>

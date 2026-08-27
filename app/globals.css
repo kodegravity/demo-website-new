@@ -56,15 +56,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 29px;
-  height: 29px;
-  background: var(--teal);
-  color: white;
-  font-size: 17px;
-  font-weight: 800;
-  border-radius: 2px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .nav-links {
