@@ -170,7 +170,7 @@ export default function Contact() {
               <div style={{ marginBottom: '32px' }}>
                 <p style={{ fontSize: '14px', color: '#60727d', marginBottom: '8px', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '.05em' }}>Address</p>
                 <p style={{ fontSize: '16px', color: 'var(--ink)', lineHeight: '1.6' }}>
-                  10 Four Seasons Pl Suite 1000<br />
+                  10 Four Seasons Pl<br />
                   Etobicoke, ON M9B 6H7<br />
                   Canada
                 </p>

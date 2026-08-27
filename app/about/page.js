@@ -123,7 +123,7 @@ export default function About() {
             </div>
             <div>
               <h3 style={{ marginBottom: '16px' }}>Address</h3>
-              <p style={{ color: '#60727d' }}>10 Four Seasons Pl Suite 1000<br />Etobicoke, ON M9B 6H7</p>
+              <p style={{ color: '#60727d' }}>10 Four Seasons Pl<br />Etobicoke, ON M9B 6H7</p>
             </div>
             <div>
               <h3 style={{ marginBottom: '16px' }}>Let's Talk</h3>
